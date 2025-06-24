@@ -1,0 +1,16 @@
+# workflow name
+name: First Workflow
+# event
+on: workflow_dispatch
+# job
+jobs:
+  # job name
+  first_job:
+    # virtual machine
+    runs-on: ubuntu-latest
+    # step
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
